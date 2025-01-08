@@ -24,20 +24,6 @@ This project provides an easy and efficient way to play videos from Terabox with
 
 ---
 
-## **Technologies Used**
-
-- **Frontend:**
-  - HTML5
-  - CSS3
-  - JavaScript (ES6+)
-- **Backend:**
-  - PHP (if applicable)
-- **Additional Libraries:**
-  - Font Awesome (for icons)
-  - Responsive CSS Framework (Optional: Bootstrap/Tailwind)
-
----
-
 ## **How to Use**
 
 1. Clone this repository:
@@ -65,8 +51,8 @@ This project provides an easy and efficient way to play videos from Terabox with
 
 For any queries or issues, feel free to reach out:
 
-- 📞 **Telegram:** [Your Telegram](https://t.me/YourTelegramUsername)
-- 📧 **Email:** [your-email@example.com](mailto:your-email@example.com)
+- 📞 **Telegram:** [Your Telegram](https://t.me/deepak_93o)
+- 📧 **Email:** [your-email@example.com](mailto:deepekbhatt455@gmail.com)
 
 ---
 
