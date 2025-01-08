@@ -1,0 +1,644 @@
+body {
+    font-family: "Gill Sans", sans-serif;
+    margin:0;
+    color: #fff;
+}
+.main {
+    background: linear-gradient(135deg, #b444a7b1, #104f8ec0);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.527);
+    border-radius:25px ;
+    padding: 20px;
+    width: 800px;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+/* .gg-sun {
+    font-size: 50px;
+} */
+
+.ad1 {
+    height: 400px;
+}
+.ad2 {
+    height: 400px;
+}
+
+/* Header */
+
+header h1 {
+    font-size: 4rem;
+    margin: 6rem 0 2rem 0;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.750);
+}
+header p {
+    font: 1.2rem "Fira Sans", sans-serif;
+    color:rgba(0, 0, 0, 0.641);
+    text-align: center;
+    font-size:1.5rem ;
+    margin-bottom: 5rem;
+}
+
+/* URL input */
+
+.inputContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-direction: column;
+}
+input {
+    width: 550px;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #1b1c1d;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    box-shadow: 
+        2px 2px 3px #b444a7b1, 
+        -2px -2px 3px #104f8ec0;
+}
+
+/* Button */
+
+.bookmarkBtn {
+    margin-top: 20px;
+    width: 100px;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.349);
+    background-color: rgb(12, 12, 12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+  }
+  
+  .IconContainer {
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(to bottom, rgb(255, 136, 255), rgb(172, 70, 255));
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 2;
+    transition-duration: 0.3s;
+  }
+  
+  .icon {
+    border-radius: 1px;
+  }
+  
+  .text1 {
+    height: 100%;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 1;
+    transition-duration: 0.3s;
+    font-size: 1.04em;
+  }
+  
+  .bookmarkBtn:hover .IconContainer {
+    width: 90px;
+    transition-duration: 0.3s;
+  }
+  
+  .bookmarkBtn:hover .text {
+    transform: translate(10px);
+    width: 0;
+    font-size: 0;
+    transition-duration: 0.3s;
+  }
+  
+  .bookmarkBtn:active {
+    transform: scale(0.95);
+    transition-duration: 0.3s;
+  }
+  
+/* #themeToggle {
+    position: absolute;
+    top: 30px;
+    right: 35px;
+} */
+
+ /* Loading */
+.loader {
+    width: fit-content;
+    margin: auto;
+    align-items: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 20px;
+    clip-path: inset(0 3ch 0 0);
+    animation: l4 1s steps(4) infinite;
+  }
+  .loader:before {
+    content:"Loading..."
+  }
+  @keyframes l4 {to{clip-path: inset(0 -1ch 0 0)}}
+
+
+  /* Video Section */
+
+.videoPlayer {
+    width: 800px;
+    height: 500px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    display: none;
+}
+.videoPlayer iframe {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+/* Disclaimer */
+
+.text {
+    color: rgba(0, 0, 0, 0.738);
+    margin: 2rem  3.5rem 2rem;
+    padding: 2rem 5rem 2rem;
+}
+.text h2 {
+    font-size: 2.2rem;
+    color: rgba(0, 0, 0, 0.8);    
+}
+.text p {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.775);
+    margin-bottom: 35px;
+    line-height: 1.8;
+    padding: 5px 0 5px;   
+}
+
+.line {
+    border: none;            
+    border-top: 2px solid #0b0b0b5a; 
+    width: 85%;             
+    margin: 20px auto;      
+}
+
+/* Footer */
+footer {
+    padding: 20px 0;
+    text-align: center;
+}
+footer p {
+    color: #1b1c1dc4;
+    font-size: 1.2rem;
+}
+footer .copyright {
+    margin: 30px 0 10px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    margin-right: 100px;
+}
+
+.social-links {
+    display: flex;
+    gap: 30px;
+    margin-left: 100px;
+}
+.social-links a {
+    text-decoration: none;
+    color: rgb(18, 18, 18);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease;
+}
+
+.social-links {
+    .telegram {
+        color: #00acee; 
+    }
+}
+.social-links i {
+    font-size: 20px;
+}
+
+/*------------------- Dark Mode -------------------*/
+/* .dark-mode {
+    .main {
+        background: linear-gradient(135deg, #620467, #190f6c);
+    }
+
+    .container {
+        background-color: #c5c2c2af;
+        border-radius: 25px;
+    }
+
+    input {
+        background-color: #919698;
+        color: #000000;
+        border: 2px solid #f73131;
+        box-shadow: 0 0 10px #f7313181;
+        
+    }
+    input[type="text"]::placeholder {
+        color: #0000009c;
+    }
+    
+    #themeToggle{
+        color: #f73131;
+
+    }
+
+    button {
+        background-color: #f73131;
+        color: rgb(0, 0, 0);
+    }
+    
+    button:hover {
+        background-color: rgb(255, 25, 25);
+        box-shadow: 1px 1px 1px 1.5px rgb(255, 25, 25,0.5),
+        -1px 1px 1px 1.5px rgb(255, 25, 25,0.5),
+        1px -1px 1px 1.5px rgb(255, 25, 25,0.5),
+        -1px -1px 1px 1.5px rgb(255, 25, 25,0.5);
+        color: black;
+        text-shadow: 0.5px 0.5px 1px rgb(15, 13, 13,0.5);
+        
+    }
+    #time {
+        margin-bottom: 20px;
+        font-size: 1rem;
+        color: #575555;
+    }
+    header h1 {
+        color: #f73131;
+        text-shadow: 0 0 10px #0000008b;    }
+    
+    .loader {
+        color: #000000;
+    }
+
+} */
+
+/*------------------- Responsive Design -------------------*/
+
+@media screen and (max-width:800px) {
+    .main {
+    background: linear-gradient(#b444a7b1, #104f8ec0);
+    width: 100%;
+    }
+    
+
+    .container {
+        padding: 20px;
+        width: 600px;
+        border-radius: 20px;
+    }
+
+   header h1 {
+        font-size: 3.5rem;
+        margin-bottom: 4rem;
+        font-weight: bold;
+    }
+    header p {
+        font-size: 1.5rem;
+    }
+    .inputContainer {
+        border-radius: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    input {
+        width: 550px;
+        margin-top: 10px;
+        padding: 15px;
+        border-radius: 10px;
+        color: #ffffff;
+        font-size: 1.2rem;
+    }
+
+    .videoPlayer {
+        width: 550px;
+        height: 300px;
+        position: relative;
+        display: none;
+        margin-bottom: 15px;
+    }
+    .videoPlayer iframe {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+        
+    .text {
+        color: rgba(0, 0, 0, 0.738);
+        margin: 2rem  3rem 2rem;
+        padding: 2rem 3.5rem 2rem;
+    }
+    footer {
+        padding: 20px 0px;
+        text-align: center;
+    }
+    footer p {
+        color: #1b1c1dc4;
+        font-size: 1.2rem;
+        padding: 0px 30px;
+    }
+    footer .copyright {
+        margin: 30px 0 10px;
+    }
+    
+    .logo img {
+        margin-right: 50px;
+    }
+
+    .social-links {
+        margin-left: 50px;
+    }
+    
+}
+
+@media screen and (max-width:650px) {
+    .container {
+        padding: 20px;
+        width: 480px;
+        border-radius: 20px;
+    }
+
+    input {
+        width: 430px;
+    }
+
+    .videoPlayer {
+        width: 460px;
+        height: 280px;
+        position: relative;
+        display: none;
+        margin-bottom: 15px;
+    }
+    
+}
+@media screen and (max-width:500px) {
+    .main {
+        background: linear-gradient(90deg, #b444a7b1, #104f8ec0);
+    }
+
+    .container {
+        padding: 10px;
+        width: 400px;
+        border-radius: 20px;
+    }
+
+   header h1 {
+        font-size: 3rem;
+        margin-top: 120px;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+    header p {
+        font-size: 1.2rem;
+
+    }
+
+    .inputContainer {
+        border-radius: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    input {
+        width:350px;
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        color: #ffffff;
+        font-size: 1rem;
+    }
+
+    .loader {
+        margin-bottom: 20px;
+        margin-top: 10px;
+        font-weight: bold;
+        font-family: monospace;
+        font-size: 15px;
+        clip-path: inset(0 3ch 0 0);
+        animation: l4 2s steps(4) infinite;
+    }
+        
+    .videoPlayer {
+        width: 400px;
+        height: 280px;
+        position: relative;
+        display: none;
+        margin-bottom: 40px;
+    }
+    .videoPlayer iframe {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+
+    .text {
+        color: rgba(0, 0, 0, 0.738);
+        margin: 1rem  1rem 1rem;
+        padding: 1rem 2rem 1rem;
+    }
+   
+    footer {
+        padding: 10px 0px;
+        text-align: center;
+    }
+    footer p {
+        color: #1b1c1dc4;
+        font-size: 1.1rem;
+        padding: 0px 20px;
+        line-height: 1.8;
+    }
+    footer .copyright {
+        margin: 30px 0 10px;
+        font-size: 1rem;
+    }
+    .logo img {
+        margin-right: 40px;
+    }
+
+    .social-links {
+        margin-left: 40px;
+    }
+    /* 
+    .dark-mode {
+        body{
+             background: linear-gradient(135deg, #620467, #190f6c);
+        }
+     */
+}
+
+
+@media screen and (max-width:450px) {
+    .container {
+        padding: 10px;
+        width: 350px;
+        text-align: center;
+        border-radius: 20px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+        margin: 10rem 0 3rem 0;
+        font-weight: bold;
+    }
+    header p {
+        font-size: 1.2rem;
+    }
+
+    .inputContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    input {
+        width: 290px;
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        color: #ffffff;
+        font-size: 1rem;
+    }
+
+.loader {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 15px;
+    clip-path: inset(0 3ch 0 0);
+    animation: l4 2s steps(4) infinite;
+  }
+        
+    .videoPlayer {
+        width: 380px;
+        height: 250px;
+        position: relative;
+        display: none;
+    }
+    .videoPlayer iframe {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+    .logo img {
+        margin-right: 30px;
+    }
+
+    .social-links {
+        margin-left: 30px;
+    }
+    /* 
+    .dark-mode {
+        body{
+             background: linear-gradient(135deg, #620467, #190f6c);
+        }
+    } */
+}
+
+
+
+@media screen and (max-width:400px) {
+    .container {
+        padding: 7px;
+        width: 330px;
+        text-align: center;
+        border-radius: 15px;
+    }
+
+   header h1 {
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+        font-weight: bold;
+    }
+    header p {
+        font-size: 1rem;
+    }
+
+    .inputContainer {
+        border-radius: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    input {
+        width: 250px;
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        color: #ffffff;
+        font-size: 0.8rem;
+    }
+
+    .loader {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-size: 10px;
+    }
+        
+    .videoPlayer {
+        width: 330px;
+        height: 200px;
+        display: none;
+        margin-bottom: 30px;
+    }
+    .videoPlayer iframe {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+    
+    /* .dark-mode {
+        body{
+             background: linear-gradient(#620467, #190f6c);
+        } 
+    */
+}
+
